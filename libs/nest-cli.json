@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "credit-system": {
+      "type": "library",
+      "root": "libs/credit-system",
+      "entryFile": "index",
+      "sourceRoot": "libs/credit-system/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/credit-system/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

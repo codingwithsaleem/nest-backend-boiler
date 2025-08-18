@@ -1,0 +1,15 @@
+export const SIFT_QUERIES = [
+  '$eq',
+  '$ne',
+  '$lt',
+  '$gt',
+  '$lte',
+  '$gte',
+  '$in',
+  '$nin',
+  '$all',
+  '$exists',
+  '$and',
+  '$or',
+  '$elemMatch',
+];
