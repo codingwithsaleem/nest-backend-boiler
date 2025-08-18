@@ -1,0 +1,12 @@
+export const TIME_1_SECOND_MLS = 1000;
+export const TIME_10_SECOND_MLS = 10000;
+export const TIME_30_SECONDS_MLS = 30000;
+export const TIME_1_MINUTE_MLS = 60000;
+export const TIME_5_MINUTES_MLS = 300000;
+export const TIME_10_MINUTES_MLS = 600000;
+export const TIME_30_MINUTES_MLS = 1800000;
+export const TIME_1_HOUR_MLS = 3600000;
+export const TIME_1_DAY_MLS = 86400000;
+export const TIME_1_WEEK_MLS = 604800000;
+export const TIME_1_MONTH_MLS = 2678400000;
+export const TIME_1_YEAR_MLS = TIME_1_MONTH_MLS * 12;

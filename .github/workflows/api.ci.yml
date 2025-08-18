@@ -1,0 +1,46 @@
+name: API Continuous Integration
+
+on: [push, pull_request]
+
+jobs:
+  buildAndTest:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: db_name
+          POSTGRES_USER: db_user
+          POSTGRES_PASSWORD: db_password
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install backend dependencies
+        run: npm install
+      - name: Build check
+        run: npm run build
+        env:
+          # NODE JS
+          NODE_OPTIONS: '--max-old-space-size=4096'

@@ -1,0 +1,30 @@
+{
+  "ignores": [
+    "@app/aws",
+    "@app/logger",
+    "@app/storage",
+    "@app/shared",
+    "@app/sse",
+    "@app/redis",
+    "@app/socket-io",
+    "@app/database",
+    "@app/notifications",
+    "@app/mailing",
+    "@app/authentication",
+    "@api/app.module",
+    "@api/app.controller",
+    "@api/environment",
+    "dotenv",
+    "rimraf",
+    "ts-loader",
+    "@commitlint/cli",
+    "@commitlint/config-conventional",
+    "@nestjs/schematics",
+    "@types/jest",
+    "commitizen",
+    "serverless-offline",
+    "serverless-plugin-include-dependencies",
+    "tsconfig-paths",
+    "webpack"
+  ]
+}
