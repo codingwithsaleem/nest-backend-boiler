@@ -89,7 +89,5 @@ Visit: [http://localhost:3001/API](http://localhost:3001/API)
 - Redis integration
 - Modular, scalable codebase
 
----
-
 
 
