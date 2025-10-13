@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Greeka Todo Backend</h1>
+<h1 align="center">🚀 Todo Backend</h1>
 
 A modern NestJS backend for a Todo project, featuring CRUD, pagination, and robust architecture.
 
